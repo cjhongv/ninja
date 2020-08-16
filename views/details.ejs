@@ -1,0 +1,11 @@
+<div class="details content">
+  <h2><%= blog.title %></h2>
+  <div class="content">
+    <p><%= blog.body %></p>
+  </div>
+  <a class="edit" href="/edit/<%= blog.id %>">edit</a>
+  <form action="/<%= blog._id %>?_method=DELETE" method="POST">
+    <input class="delete" type="submit" value="delete">
+  </form>
+</div>
+</div>
